@@ -23,13 +23,14 @@ body{
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: rgba(248, 24, 24, 0.823) ;
+    background-image: url(../assets/mercury.jpg);
+    background-size: 100%;
     position: absolute;
     box-shadow: -4px 2px 56px #f9c05f;
     left: 43%;
     top: 42%;
     transform: translate(-50%, -50%);
-    animation: orbit2 2s linear infinite;
+    animation: orbit2 3s linear infinite;
 }
 
 @keyframes orbit2 {
@@ -46,16 +47,43 @@ p{
     top: -11px;
 }
 
-.mercury-outline{
+.mercury-outline, .venus-outline-1{
     border-radius: 50%;
     border: 2px dotted #ddd9;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 140px;
-    width: 140px;
-
-
+ 
 }
 
+.mercury-outline{
+    height: 140px;
+    width: 140px;
+}
+
+.venus{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(../assets/venus.jpg) ;
+    background-size: 100%;
+    position: absolute;
+    box-shadow: -4px 2px 56px rgb(228, 222, 135);
+    left: 40%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    animation: orbit3 10s linear infinite;
+}
+
+@keyframes orbit3 {
+    from{transform: rotate(0deg) translateX(100px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(100px) rotate(-360deg);}
+    
+}
+
+
+.venus-outline-1{
+    height: 200px;
+    width: 200px;
+}
