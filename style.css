@@ -30,7 +30,7 @@ body{
     left: 43%;
     top: 42%;
     transform: translate(-50%, -50%);
-    animation: orbit2 3s linear infinite;
+    animation: orbit2 8s linear infinite;
 }
 
 @keyframes orbit2 {
@@ -47,9 +47,14 @@ p{
     top: -11px;
 }
 
-.mercury-outline, .venus-outline-1{
+
+/* .jupiter-outline-1, .saturn-outline-1, */
+/* .uranus-outline-1, .neptune-outline-1 */
+
+.mercury-outline, .venus-outline-1, .earth-outline-1, .mars-outline-1
+ {
     border-radius: 50%;
-    border: 2px dotted #ddd9;
+    border: 1.5px dotted #ddd9;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -86,4 +91,56 @@ p{
 .venus-outline-1{
     height: 200px;
     width: 200px;
+}
+
+.earth{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(../assets/earth.jpg) ;
+    background-size: 100%;
+    position: absolute;
+    box-shadow: -4px 2px 56px rgba(161, 175, 249, 0.766);
+    left: 44%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    animation: orbit4 22s linear infinite;
+}
+
+@keyframes orbit4 {
+    from{transform: rotate(0deg) translateX(150px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(150px) rotate(-360deg);}
+    
+}
+
+
+.earth-outline-1{
+    height: 300px;
+    width: 300px;
+}
+
+.mars{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(../assets/mars.jpg) ;
+    background-size: 110%;
+    position: absolute;
+    box-shadow: -4px 2px 56px rgba(207, 207, 59, 0.766);
+    left: 45%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    animation: orbit5 30s linear infinite;
+}
+
+@keyframes orbit5 {
+    from{transform: rotate(0deg) translateX(185px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(185px) rotate(-360deg);}
+    
+}
+
+
+.mars-outline-1{
+    height: 370px;
+    width: 370px;
 }
