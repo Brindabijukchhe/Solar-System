@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 1rem;
+    background-image:url(../assets/star.jpg);
+    background-size: 100%;  
+
+}
+
+.sun{
+  height: 120px;
+  width: 120px;
+  background-image: url(../assets/sun.png);
+  border-radius: 50%;
+  background-size: cover;  
+  /* box-shadow: -8px 5px 20px #ddb674; */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.mercury{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgba(248, 24, 24, 0.823) ;
+    position: absolute;
+    box-shadow: -4px 2px 56px #f9c05f;
+    left: 43%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    animation: orbit2 2s linear infinite;
+}
+
+@keyframes orbit2 {
+    from{transform: rotate(0deg) translateX(70px) rotate(0deg);}
+    to{transform: rotate(360deg) translateX(70px) rotate(-360deg);}
+    
+}
+
+p{
+    color: white;
+    font-family: system-ui;
+    position: absolute;
+    left: -62px;
+    top: -11px;
+}
+
+.mercury-outline{
+    border-radius: 50%;
+    border: 2px dotted #ddd9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 140px;
+    width: 140px;
+
+
+}
+
